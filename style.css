@@ -1,0 +1,142 @@
+*{
+    font-family: 'Grape Nuts', cursive;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+h1{
+    line-height:1.3em;
+    font-size:2rem;
+}
+.container{
+    text-align:center;
+    width: 100%;
+}
+.container_main{
+    width:85%;
+    max-width:850px;
+    margin:0 auto;
+
+}
+
+.header a {
+    color:white;
+    text-decoration:none;
+}
+.header{
+    padding:2rem 0;
+    background:black;
+    color:white;
+    margin:0px;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+}
+
+.logo-nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.menu-icon{
+
+    display:none;
+}
+
+.navigation ul {
+
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.navigation ul li {
+
+    display:inline-block;
+}
+.navigation ul li a {
+    font-size:25px;
+    display:block;
+    padding:0.5rem 1rem;
+}
+
+.navigation ul li a:hover{
+    color:#ee5d62;
+
+}
+.main{
+    padding-top:13rem;
+}
+.main-imagen{
+    width:100%;
+    height:100vh;
+    background-image: url('../tienda_hamburguesas/recursos/main_foto.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.main-title{
+    padding-top:500px;
+    display:flex;
+   align-items: center;
+    justify-content:center;
+    color:white;
+    font-size:100px;
+
+}
+.burger_principal{
+    position:absolute;
+    width: 100%;
+    height:100%;
+}
+.footer{
+        margin-top:6rem;
+        background:#f2f2f2;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+@media only screen and (max-width:806px){
+
+    .menu-icon{
+        color:white;
+        display:block;
+        cursor:pointer;
+
+    }
+    .navigation{
+        width:100%;
+        margin-top:1rem;
+        text-align: right;
+
+    }
+    .navigation ul {
+
+        display:none;
+
+    }
+    .navigation ul.show{
+        display:flex;
+        flex-direction:column;
+       
+
+    }
+    .navigation ul li {
+    
+        display:inline-block;
+    }
+    .navigation ul li a {
+        font-size:25px;
+        display:block;
+        padding:1rem 1rem;
+    }
+    
+    .navigation ul li a:hover{
+        color:#ee5d62;
+    
+    }
+
+}
