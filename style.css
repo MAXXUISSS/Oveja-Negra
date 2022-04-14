@@ -25,10 +25,10 @@ h1{
 }
 
 .header{
-    padding:2rem 0;
+    z-index: 1;
+    padding:20px 0;
     background:black;
     color:white;
-    margin:0px;
     position:fixed;
     left:0;
     top:0;
@@ -80,19 +80,32 @@ h1{
     background-image: url('../tienda_hamburguesas/recursos/main_foto.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
 
 
 }
-
 .main-title{
+    color:white;
+    font-size:40px;
+    text-align:center;
+    padding:10px;
+    position:absolute;
+    top:60%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+/*.main-title{
     padding-top:500px;
     display:flex;
-    align-items: center;
+    text-align: center;
     justify-content:center;
     color:white;
     font-size:80px;
 
-}
+
+}*/
 
 .burger_principal{
     position:absolute;
@@ -105,11 +118,12 @@ h1{
     border-bottom: 2px solid white;
     padding-top:14px;
     background-color:black;
-    display:grid;
+    display:flex;
+    flex-wrap: wrap;
+    gap:30px;
     justify-content:space-around;
-    grid-template-columns: auto auto auto;
     align-content: space-between;
-    height:65px;
+   
 }
 
 .comentarios i{
@@ -202,8 +216,14 @@ h1{
     text-align: center;
 }
 
+
+
 @media only screen and (max-width:806px){
 
+   
+   .logo img{
+       width:90px;
+   }
     .menu-icon{
         color:white;
         display:block;
