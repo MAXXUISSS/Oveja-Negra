@@ -87,7 +87,7 @@ h1{
 .main-title{
     padding-top:500px;
     display:flex;
-   align-items: center;
+    align-items: center;
     justify-content:center;
     color:white;
     font-size:80px;
@@ -108,8 +108,8 @@ h1{
     display:grid;
     justify-content:space-around;
     grid-template-columns: auto auto auto;
-   align-content: space-between;
-   height:65px;
+    align-content: space-between;
+    height:65px;
 }
 
 .comentarios i{
@@ -148,7 +148,7 @@ h1{
     border-radius: 5px;
     color:white;
     background-color:black;
-    
+
     width: 400px;
     margin:10px;
     text-align:center;
@@ -161,13 +161,9 @@ h1{
 
 }
 
-.img-brg{
-    
+.img-brg{    
     height: 250px;
     margin:0px 1px;
-    
-    
-    
 }
 
 .img-brg img{
@@ -176,12 +172,32 @@ h1{
 }
 
 .text{
+    height: 150px;
     padding:20px;
 }
 
+
+.botonera{
+    margin-bottom: 15px;
+}
+.compra{
+    font-size: 15px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin:10px 0px;
+    border:2px solid white;
+    color:white;
+    border-radius: 5px;
+    background:none;
+}
+.compra:hover{
+ border:2px solid #ee5d62;
+ color:#ee5d62;
+}
+
 .footer{
-        margin-top:6rem;
-        background:#f2f2f2;
+    margin-top:6rem;
+    background:#f2f2f2;
     padding: 4rem 0;
     text-align: center;
 }
